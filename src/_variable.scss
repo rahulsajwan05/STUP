@@ -1,0 +1,20 @@
+:root{
+    --cta-bg: #664d03;
+    --headerBg: #202122;
+    // --stage:  url(../assets/images/double-bubble.png), linear-gradient(60deg, #eeffb9, #ffedb9 50%, #eee 100%);
+    // --stage:  url(../assets/images/double-bubble.png), linear-gradient(60deg, #263006, #342806 50%, #382020 100%);
+}
+
+.theme-light{
+    --wlcm-cta:#664d03;
+    --common-wrapper:#e9cc7b;
+    // --stage:  url(../assets/images/double-bubble.png), linear-gradient(60deg, #eeffb9, #ffedb9 50%, #eee 100%);
+    --app-wrapper-bg: linear-gradient(0deg, #f0b80d66, transparent);
+}
+
+.theme-dark{
+    --wlcm-cta:#2b373e;
+    --common-wrapper:#7a868d;
+    // --stage:  url(../assets/images/double-bubble.png), linear-gradient(0deg, #121212, #131313);
+    --app-wrapper-bg:linear-gradient(0deg, #196e8fb5, #020f1c);
+}

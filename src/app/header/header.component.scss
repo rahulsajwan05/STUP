@@ -1,0 +1,57 @@
+.header{
+    background-color: rgb(50 113 176) !important;
+}
+
+header .title{
+    cursor: pointer;
+}
+
+// Switcher
+.switcher_cover{
+    border: 1px solid;
+    width: 50px;
+    height: 20px;
+    box-shadow: inset 0px 0px 30px 10px rgb(0 0 0 / 57%);
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+
+    
+    .switcher_path{
+        height: 20px;
+        position: relative;
+        width: 100%;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5px;
+
+        .darkLight{
+            font-size: 0.6rem;
+        }
+
+        .switcher_handle{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #f8f8f8;
+            border-radius: 50%;
+            transform: translateX(-6px);
+            transition: transform 0.5s ease-in-out;
+
+        }
+    }
+    
+            &.active{
+                .switcher_path{
+                //    background: rgb(240, 96, 156);
+
+                  .switcher_handle{
+                    //   background: pink;
+                      transform: translateX(24px);
+                  }
+                }
+            } 
+}
