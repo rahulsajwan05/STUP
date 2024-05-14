@@ -1,7 +1,4 @@
-@import "global";
 @import "variable";
-@import "common";
-@import "component-selector";
 
 
 /* You can add global styles to this file, and also import other style files */
@@ -11,3 +8,64 @@ html, body {
      height: 100%; 
     width: 100%;
 }
+
+
+.app-wrapper{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: var(--app-wrapper-bg);
+    // color: var(--common-text);
+}
+
+
+
+@media only screen and (min-device-width: 540px) and (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .centered-div {
+        // color: aliceblue;
+        font-size: 13rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        // background: var(--app-wrapper-bg);
+        color: var(--wlcm-cta);
+        // color: var(--common-text);
+        // font-family: 'Roboto';
+        // border: 1px solid #000;
+    }
+
+    img {
+        position: absolute;
+        // top: 15rem;
+        // left: 24rem;
+        z-index: 1;
+        height: 13rem;
+        width: 6rem;
+    
+      }
+  }
+  @media only screen and (min-device-width: 540px) and (max-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .centered-div {
+        // color: aliceblue;
+        font-size: 16rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        // background: var(--app-wrapper-bg);
+        color: var(--wlcm-cta);
+        // color: var(--common-text);
+        // font-family: 'Roboto';
+        // border: 1px solid #000;
+    }
+
+    img {
+        position: absolute;
+        // top: 15rem;
+        // left: 24rem;
+        z-index: 1;
+        height: 13rem;
+        width: 6rem;
+    
+      }
+  }
+
+
+
