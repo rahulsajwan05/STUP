@@ -39,13 +39,11 @@
 
 img {
     position: absolute;
-    // top: 15rem;
-    // left: 24rem;
     z-index: 1;
-    height: 13rem;
     width: 8rem;
-    top: 9rem;
-
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
   }
 
   @media only screen and (min-device-width: 240px) and (max-device-width: 320px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
