@@ -2,6 +2,18 @@
 <nav class="navbar navbar-expand-lg header">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">My Space</a>
+      <div class="title">
+        <div class="dark_mode">
+            <div [ngClass]="(sendStoredTheme === 'theme-dark') ? 'switcher_cover active' : 'switcher_cover'"
+                (click)="callTheme()" class="switcher_cover">
+                <div class="switcher_path">
+                    <i class="fas fa-sun darkLight" style="color: aliceblue;"></i>
+                    <i class="fas fa-moon darkLight" style="color: aliceblue;"></i>
+                    <div class="switcher_handle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -25,20 +37,12 @@
         </ul>
 
       </div>
+
+      
+
     </div>
   
-    <div class="title">
-      <div class="dark_mode">
-          <div [ngClass]="(sendStoredTheme === 'theme-dark') ? 'switcher_cover active' : 'switcher_cover'"
-              (click)="callTheme()" class="switcher_cover">
-              <div class="switcher_path">
-                  <i class="fas fa-sun darkLight" style="color: aliceblue;"></i>
-                  <i class="fas fa-moon darkLight" style="color: aliceblue;"></i>
-                  <div class="switcher_handle"></div>
-              </div>
-          </div>
-      </div>
-  </div>
+   
  
   </nav>
 
